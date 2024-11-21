@@ -19,8 +19,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 SPDX-License-Identifier: MIT
 *************************************************************************************************/
 
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HAL_H
+#define HAL_H
 
 /** @file
  ** @brief Definición de la función principal del programa
@@ -42,14 +42,11 @@ extern "C" {
 
 /* === Public function declarations ============================================================ */
 
-/* Comentario normal */
+void hal_gpio_set_direction(uint8_t port, uint8_t bit, bool output);
 
-/**
- * @brief Función principal del sistema, se ejecuta al iniciar el programa
- *
- * @return int Valor de retorno, cero si esta todo bien, negativo si hay un error
- */
-int main(void);
+void hal_gpio_set_output(uint8_t port, uint8_t bit, bool active);
+
+bool hal_gpio_get_input(uint8_t port, uint8_t bit);
 
 /* === End of documentation ==================================================================== */
 
@@ -57,4 +54,4 @@ int main(void);
 }
 #endif
 
-#endif /* MAIN_H */
+#endif /* HAL_H */
