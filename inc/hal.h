@@ -23,11 +23,11 @@ SPDX-License-Identifier: MIT
 #define HAL_H
 
 /** @file
- ** @brief Definición de la función principal del programa
+ ** @brief
  **/
 
 /* === Headers files inclusions ================================================================ */
-
+#include <stdint.h>
 /* === Cabecera C++ ============================================================================ */
 
 #ifdef __cplusplus

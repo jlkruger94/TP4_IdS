@@ -22,9 +22,14 @@ SPDX-License-Identifier: MIT
 #ifndef MAIN_H
 #define MAIN_H
 
-/** @file
- ** @brief Definición de la función principal del programa
- **/
+/**
+ * @file main.h
+ * @brief Header file for the main function definition.
+ *
+ * This header file contains the declaration of the main function, which is the entry point
+ * of the program. It also includes other necessary function declarations for initialization
+ * and program flow.
+ */
 
 /* === Headers files inclusions ================================================================ */
 
@@ -45,9 +50,13 @@ extern "C" {
 /* Comentario normal */
 
 /**
- * @brief Función principal del sistema, se ejecuta al iniciar el programa
+ * @brief Main function of the program.
  *
- * @return int Valor de retorno, cero si esta todo bien, negativo si hay un error
+ * This function is executed when the program starts. It initializes a GPIO pin for controlling
+ * a red LED and sets its initial state to OFF. The function is the entry point of the program
+ * and handles the basic setup required for operation.
+ *
+ * @return int Returns zero if the program executed successfully, negative if an error occurred.
  */
 int main(void);
 
